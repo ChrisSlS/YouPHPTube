@@ -23,7 +23,9 @@ $advancedCustom = json_decode($json_file);
     </head>
 
     <body>
-        <?php include $global['systemRootPath'] . 'view/include/navbar.php'; ?>
+        <?php
+        include 'include/navbar.php';
+        ?>
 
         <div class="container-fluid">
             <?php
@@ -265,7 +267,7 @@ $advancedCustom = json_decode($json_file);
                     <div class="hidden-xs col-sm-2 col-md-3 col-lg-4"></div>
                     <div class="col-xs-12 col-sm-8  col-md-6 col-lg-4 list-group-item ">
                         <fieldset>
-                            <legend><?php echo __("Please sign in"); ?></legend>
+                            <legend style="width: 605px; text-align: center;"><?php echo __("Please sign in"); ?></legend>
 
 
                             <?php
@@ -313,7 +315,7 @@ $advancedCustom = json_decode($json_file);
                                     ?>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <a href="signUp" class="btn btn-primary btn-block"  id="facebookButton"><span class="fa fa-user-plus"></span> <?php echo __("Sign up"); ?></a>
+                                            <a href="signUp" class="btn btn-primary btn-block"  id="facebookButton"><span class="fa fa-user-plus"></span> <?php echo __("S'enregistrer"); ?></a>
                                         </div>
                                     </div>
                                     <?php
@@ -425,7 +427,7 @@ $advancedCustom = json_decode($json_file);
         </div><!--/.container-->
 
         <?php
-        include $global['systemRootPath'] . 'view/include/footer.php';
+        include 'include/footer.php';
         ?>
 
     </body>
